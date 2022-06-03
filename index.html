@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="https://www.dafontfree.net/embed/bmF0cy1yZWd1bGFyJmRhdGEvNTEvbi8yMTUxMy9OQVRTLVJlZ3VsYXIudHRm" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Brand E-comerce</title>
 </head>
 <body>
@@ -19,21 +20,47 @@
         </div>
         <nav>
             <a href="pages/Account.html"><i class="uil uil-user-circle"></i></a>
-            <a href="#"><i class="uil uil-heart"></i></a>
+            <a href="pages/config.html"><i class="uil uil-heart"></i></a>
             <a href="#"><i class="uil uil-setting"></i></a>
             <a href="pages/LogIn.html"><i class="uil uil-signin"></i></a>
         </nav>
     </nav>
-    <header class="header_desktop">
-        <audio src="./sources/audio/song1.mp3" controls></audio>
-        <button type="menu"><i class="uil uil-bars"></i></button>
-        <input type="search" placeholder="Search">
-        <i class="uil uil-shopping-bag"></i>
+    <header class="header_desktop container-fluid">
+        <div class="row h-25 mt-3 mb-3 d-flex flex-row align-items-center align-self-center justify-content-md-around justify-content-sm-around">
+            <audio class="col-3 me-auto h-100" src="./sources/audio/song1.mp3" controls></audio>
+            <button class="col-1" type="menu"><i class="uil uil-bars"></i></button>
+            <input class="col-2 col-md-8 col-sm-8  form-control w-25" type="search" placeholder="Search">
+            <i class="col-1 uil uil-shopping-bag"></i>
+        </div>
     </header>
     <!------------HEADER DE DESKTOP----------->
     <main>
-        <img class="imageClock" src="./sources/img/mainphoto.png">
-        <div class="carrousell"></div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./sources/img/blackfriday.png" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./sources/img/mainphoto.png" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./sources/img/notdesign.png" class="d-block w-50" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <section>
             <h1>TODAY DEALS % </h1>
                 <a href="#"><p>VIEW MORE</p></a>
@@ -218,5 +245,6 @@
         <p class="footer_p">© Copyright (brand name) - 2022</p>
         <p class="footer_p">All rights reserved</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
