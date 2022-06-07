@@ -105,6 +105,14 @@ body::-webkit-scrollbar-thumb:hover {
         transform: translate(0px, 0px);
     }
 }
+@keyframes animacion_opacidad {
+    0.0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 /*/////////////////BODY START//////////////////*/
 body{
     display: grid;
@@ -166,6 +174,9 @@ header{
     border: 1px solid rgb(112, 112, 112);
     border-radius: 30px;
 }*/
+.animacion_opacidad{
+    animation: animacion_opacidad 4s ease 0s 1 normal none;
+}
 header button{
     display: none;
 }
