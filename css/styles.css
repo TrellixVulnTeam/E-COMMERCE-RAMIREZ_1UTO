@@ -212,7 +212,6 @@ main section {
 section a {
   text-decoration: none;
 }
-
 section a p {
   display: inline;
   font-family: "NATS";
@@ -250,6 +249,18 @@ section a p {
   margin-bottom: 20px;
   cursor: pointer;
 }
+.products img {
+  height: 200px;
+  margin-top: 20%;
+}
+.products:hover > img {
+  transform: scale(1.2);
+  transition: ease-in-out 1s;
+}
+.products:not(hover) > img {
+  transform: scale(1);
+  transition: ease-in-out 1s;
+}
 
 .productsCategories {
   background: linear-gradient(0deg, #b1b1b1 0%, rgb(255, 255, 255) 81.25%);
@@ -258,6 +269,10 @@ section a p {
   border-radius: 25px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+.productsCategories img {
+  height: 250px;
+  margin-top: 20%;
 }
 
 .lastPrice {
@@ -270,7 +285,6 @@ section a p {
   color: rgba(41, 41, 41, 0.95);
   padding: 10px;
 }
-
 .lastPrice::before {
   content: "$";
   font-size: 15px;
@@ -288,7 +302,6 @@ section a p {
   font-weight: 500;
   text-decoration: line-through;
 }
-
 .offerPrice::before {
   content: "$";
   font-size: 10px;
@@ -325,12 +338,10 @@ section a p {
   cursor: pointer;
   font-size: 14px;
 }
-
 .buttonProducts:hover {
   background-color: rgba(255, 255, 255, 0.2392156863);
   transition: ease-in-out 0.5s;
 }
-
 .buttonProducts:not(hover) {
   transition: ease-in-out 0.5s;
 }
@@ -347,29 +358,8 @@ section a p {
   height: 400px;
   width: 50px;
 }
-
 .iconContainer i {
   color: #707070;
-}
-
-.products img {
-  height: 200px;
-  margin-top: 20%;
-}
-
-.productsCategories img {
-  height: 250px;
-  margin-top: 20%;
-}
-
-.products:hover > img {
-  transform: scale(1.2);
-  transition: ease-in-out 1s;
-}
-
-.products:not(hover) > img {
-  transform: scale(1);
-  transition: ease-in-out 1s;
 }
 
 footer {
@@ -379,15 +369,13 @@ footer {
   font-family: "DM Sans", sans-serif;
   grid-area: footer;
 }
-
 footer ul {
   list-style-type: none;
   font-family: "DM Sans", sans-serif;
   padding-top: 50px;
   line-height: 25px;
 }
-
-.footer_p {
+footer p {
   text-align: end;
   margin-right: 10px;
 }
