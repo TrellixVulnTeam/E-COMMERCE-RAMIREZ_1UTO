@@ -35,15 +35,13 @@ img {
 /*//////////////////////////////SCROLLBARS//////////////////////////////*/
 body::-webkit-scrollbar {
 	width: 17px;
-	margin-top: 20px;
 }
 body::-webkit-scrollbar-track {
 	background: rgb(255, 255, 255);
 }
 body::-webkit-scrollbar-thumb {
     background-color: rgb(37, 37, 37);
-	border-radius: 30px;
-    border: 5px solid rgb(255, 255, 255);	
+	@include scrollbarthumb;	
 }
 body::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(63, 63, 63);
@@ -56,8 +54,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .productosCarrousel::-webkit-scrollbar-thumb {
     background-color: rgb(189, 189, 189);
-	border-radius: 30px;
-    border: 5px solid rgb(255, 255, 255);	
+	@include scrollbarthumb;	
 }
 .productosCarrousel::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(134, 134, 134);
@@ -72,8 +69,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .carrousell__Account::-webkit-scrollbar-thumb {
     background-color: rgba(156, 156, 156, 0.555);
-	border-radius: 30px;
-    border: 5px solid rgb(255, 255, 255);	
+	@include scrollbarthumb;	
 }
 .carrousell__Account::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(63, 63, 63);
@@ -88,8 +84,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .section_Pay::-webkit-scrollbar-thumb {
     background-color: rgba(156, 156, 156, 0.555);
-	border-radius: 30px;
-    border: 5px solid rgb(255, 255, 255);	
+	@include scrollbarthumb;	
 }
 .section_Pay::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(63, 63, 63);
@@ -106,7 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 @keyframes animacion_opacidad {
-    0.0%{
+    0%{
         opacity: 0%;
     }
     100%{
@@ -114,181 +109,15 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 /*/////////////////BODY START//////////////////*/
-@import "_inicio";
+@import "componentes/inicio";
 /*/////////////////////ACOUNT HTML////////////////////////*/
+@import "componentes/account";
+@import "bases/extend";
+@import "bases/mixin";
 
-.body__Account header{
-    width: 97%;
-    height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
-    background-color: #33333300;
-}
-.body__Account header h1{
-    width: auto;
-    margin-top: 0;
-    padding-left: 15px;
-    line-height: 55px;
-    font-size: 75px;
-    font-weight: 200;
-    display: inline;
-    color: #141414;
-}
-.body__Account header h2{
-    width:auto;
-    padding-left: 25px;
-    padding-bottom: 5%;
-    line-height: 20px;
-    color: #141414;
-}
-.body__Account h3{
-    margin-left:30px;
-    margin-top: 20px;
-    color: #141414;
-    font-size: 30px;
-    font-family: 'NATS';
-}
-.header__Account img{
-    height: 150px;
-}
-.header__Account div{
-    display: flex;
-    flex-direction:column ;
-}
-.header__Account article{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 20px;
-    margin-left: 3%;
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgb(214, 214, 214) 100%);
-    border: 1px solid rgb(255, 255, 255);
-    border-right: none;
-    border-radius: 20px 0px 0px 20px;
-}
-.header__Account i{
-    margin-top: 20px;
-}
-.header_desktop1{
-    display: none;
-}
-.main__account{
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    margin-left: 3%;
-    width: 97%;
-}
-.account__img{
-    height: 150px;
-    margin-left: 75px ;
-    margin-right: 75px ;
-}
-.account__img1{
-    height: 150px;
-    margin-left: 50px ;
-    margin-right: 35px ;
-}
-.body__Account main section article{
-    display:flex;
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgb(214, 214, 214) 100%);
-    border-radius: 25px;
-    font-family: 'NATS';
-}
-.body__Account main section article h4{
-    font-size: 25px;
-    height: 50px
-}
-.body__Account main section article div span{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.body__Account main section article div{
-    width: 23%;
-}
-.body__Account main section article div span p:first-child{
-    font-size: 25px;
-}
-.body__Account main section article div span p:first-child::before{
-    content: "$";
-    font-size: 10px;
-    position:relative;
-    bottom: 5px;
-    text-decoration: none;
-}
-.div__for__title{
-    width: 60%;
-}
-.div__for__title_Pay{
-    height: 50%;
-    width: auto;
-    margin-left: 2%;
-}
-.carrousell__Account{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-height: 75%;
-    overflow-x: auto;
-    margin-top: 20px;
-    gap: 20px;
-    
-}
-.span__button{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left:35% ;
-}
-.span__button button{
-    height: 25%;
-    border: none;
-    background-color: #141414;
-    color: #ececec;
-
-}
-.span__button  button:hover{
-    background-color: #242424;
-    color: #ececec;
-    cursor: pointer;
-}
-.section_Pay{
-    display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    gap: 40px;
-    width: 500px;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-.section_Pay button{
-    scroll-snap-align: start;
-    width: 600px;
-    background-color: #33333300;
-    border: none;
-}
-.boton__shield{
-    margin-left: 10%;
-    margin-top: 10%;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(332deg, rgba(255,255,255,1) 0%, rgb(168, 168, 168) 100%);
-
-}
-.boton__shield:hover{
-    cursor: pointer;
-    background: linear-gradient(332deg, rgba(255,255,255, 0.7) 0%, rgba(168, 168, 168, 0.7) 100%); 
-}
-.boton__shield i{
-    font-size: 150px;
-    color: #141414;
-}
-/*//////////////////////LOG-IN////////////////*/
+///////////////////////LOG-IN////////////////*/
 form{
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;

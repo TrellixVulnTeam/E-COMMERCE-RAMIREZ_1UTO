@@ -14,19 +14,19 @@ body{
     grid-area: nav;
     display: flex;
     div{
-        display: flex;
-        position: fixed;
-        flex-direction: column;
+        display: map-get($map: estilo_map, $key:display);
+        position: map-get($map: estilos_map, $key:position);
+        flex-direction: map-get($map: estilos_map, $key:flex-direction);
         gap: 10px;
         margin-top: 10px;
         left: 5px;
         animation: animacion_iconos 1.5s linear 0s 1 normal none;
     }
     nav{
-        display: flex;
+        display: map-get($map: estilo_map, $key:display);
+        position: map-get($map: estilos_map, $key:position);
+        flex-direction: map-get($map: estilos_map, $key:flex-direction);
         gap: 35px;
-        position: fixed;
-        flex-direction: column;
         top: 65%;
         left: 5px;
         animation: animacion_iconos 1.5s linear 0s 1 normal none;
@@ -172,7 +172,7 @@ section a {
 
 }
 .productDescription{
-    display:flex;
+    display: map-get($map: estilo_map, $key:display);
     justify-content: space-between;
     flex-wrap: nowrap;
     font-size: 18px;
