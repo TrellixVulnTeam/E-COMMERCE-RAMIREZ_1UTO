@@ -1,3 +1,6 @@
+@import "bases/mixin";
+@import "bases/map";
+@import "bases/extend";
 @font-face {
     font-family: 'NATS';
     src:url('/sources/font/NATS.ttf.woff') format('woff'),
@@ -109,12 +112,11 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 /*/////////////////BODY START//////////////////*/
+
 @import "componentes/inicio";
 /*/////////////////////ACOUNT HTML////////////////////////*/
 @import "componentes/account";
-@import "bases/extend";
-@import "bases/mixin";
-@import "bases/map";
+
 
 ///////////////////////LOG-IN////////////////*/
 form{

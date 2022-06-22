@@ -1,5 +1,9 @@
 $linear-gardient-grey: linear-gradient(0deg, #b1b1b1 0%, rgb(255, 255, 255) 81.25%);
-
+$estilo:(
+    display: flex,
+    position: fixed,
+    flex-direction: column
+);
 body{
     display: grid;
     grid-template-columns: 3% 97%;
@@ -12,20 +16,20 @@ body{
 .lateralBar{
     background: linear-gradient(90deg, #cccccc 0%, #ffffff00 100%);
     grid-area: nav;
-    display: flex;
+    display: map-get($estilo, display );
     div{
-        display: map-get($map: estilo_map, $key:display);
-        position: map-get($map: estilos_map, $key:position);
-        flex-direction: map-get($map: estilos_map, $key:flex-direction);
+        display: map-get($estilo, display );
+        position: map-get($estilo, position);
+        flex-direction: map-get($estilo, flex-direction);
         gap: 10px;
         margin-top: 10px;
         left: 5px;
         animation: animacion_iconos 1.5s linear 0s 1 normal none;
     }
     nav{
-        display: map-get($map: estilo_map, $key:display);
-        position: map-get($map: estilos_map, $key:position);
-        flex-direction: map-get($map: estilos_map, $key:flex-direction);
+        display: map-get($estilo, display );
+        position: map-get($estilo, position);
+        flex-direction: map-get($estilo, flex-direction);
         gap: 35px;
         top: 65%;
         left: 5px;
@@ -95,7 +99,7 @@ section a {
 }
 
 .productosCarrousel{
-    display: flex;
+    display: map-get($estilo, display );
     overflow-x: auto;
     align-items: center;
     width: 98%;
@@ -172,7 +176,7 @@ section a {
 
 }
 .productDescription{
-    display: map-get($map: estilo_map, $key:display);
+    display: map-get($estilo, display );
     justify-content: space-between;
     flex-wrap: nowrap;
     font-size: 18px;
@@ -206,7 +210,7 @@ section a {
     }
 }
 .iconContainer{
-    display: flex;
+    display: map-get($estilo, display );
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;

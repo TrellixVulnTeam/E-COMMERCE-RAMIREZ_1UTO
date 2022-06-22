@@ -1,3 +1,11 @@
+.h3, .div__for__title_Pay h3, .div__for__title h3 {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #141414;
+  font-size: 30px;
+  font-family: "NATS";
+}
+
 @font-face {
   font-family: "NATS";
   src: url("/sources/font/NATS.ttf.woff") format("woff"), url("/sources/font/NATS.ttf.svg") format("svg"), url("/sources/font/NATS.ttf.eot"), url("/sources/font/NATS.ttf.eot?#iefix") format("embedded-opentype");
@@ -153,9 +161,9 @@ body {
 }
 .lateralBar nav {
   display: flex;
-  gap: 35px;
   position: fixed;
   flex-direction: column;
+  gap: 35px;
   top: 65%;
   left: 5px;
   animation: animacion_iconos 1.5s linear 0s 1 normal none;
@@ -550,184 +558,6 @@ footer p {
   color: #141414;
 }
 
-.h3, .div__for__title h3, .div__for__title_Pay h3 {
-  margin-left: 30px;
-  margin-top: 20px;
-  color: #141414;
-  font-size: 30px;
-  font-family: "NATS";
-}
-
-/*.body__Account header{
-    width: 97%;
-    height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
-    background-color: #33333300;
-}
-.body__Account header h1{
-    width: auto;
-    margin-top: 0;
-    padding-left: 15px;
-    line-height: 55px;
-    font-size: 75px;
-    font-weight: 200;
-    display: inline;
-    color: #141414;
-}
-.body__Account header h2{
-    width:auto;
-    padding-left: 25px;
-    padding-bottom: 5%;
-    line-height: 20px;
-    color: #141414;
-}
-.body__Account h3{
-    margin-left:30px;
-    margin-top: 20px;
-    color: #141414;
-    font-size: 30px;
-    font-family: 'NATS';
-}
-.header__Account img{
-    height: 150px;
-}
-.header__Account div{
-    display: flex;
-    flex-direction:column ;
-}
-.header__Account article{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    margin-top: 20px;
-    margin-left: 3%;
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgb(214, 214, 214) 100%);
-    border: 1px solid rgb(255, 255, 255);
-    border-right: none;
-    border-radius: 20px 0px 0px 20px;
-}
-.header__Account i{
-    margin-top: 20px;
-}
-.header_desktop1{
-    display: none;
-}
-.main__account{
-    display: flex;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    margin-left: 3%;
-    width: 97%;
-}
-.account__img{
-    height: 150px;
-    margin-left: 75px ;
-    margin-right: 75px ;
-}
-.account__img1{
-    height: 150px;
-    margin-left: 50px ;
-    margin-right: 35px ;
-}
-.body__Account main section article{
-    display:flex;
-    background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgb(214, 214, 214) 100%);
-    border-radius: 25px;
-    font-family: 'NATS';
-}
-.body__Account main section article h4{
-    font-size: 25px;
-    height: 50px
-}
-.body__Account main section article div span{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.body__Account main section article div{
-    width: 23%;
-}
-.body__Account main section article div span p:first-child{
-    font-size: 25px;
-}
-.body__Account main section article div span p:first-child::before{
-    content: "$";
-    font-size: 10px;
-    position:relative;
-    bottom: 5px;
-    text-decoration: none;
-}
-.div__for__title{
-    width: 60%;
-}
-.div__for__title_Pay{
-    height: 50%;
-    width: auto;
-    margin-left: 2%;
-}
-.carrousell__Account{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-height: 75%;
-    overflow-x: auto;
-    margin-top: 20px;
-    gap: 20px;
-
-}
-.span__button{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left:35% ;
-}
-.span__button button{
-    height: 25%;
-    border: none;
-    background-color: #141414;
-    color: #ececec;
-
-}
-.span__button  button:hover{
-    background-color: #242424;
-    color: #ececec;
-    cursor: pointer;
-}
-.section_Pay{
-    display: flex;
-    scroll-snap-type: x mandatory;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    gap: 40px;
-    width: 500px;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-.section_Pay button{
-    scroll-snap-align: start;
-    width: 600px;
-    background-color: #33333300;
-    border: none;
-}
-.boton__shield{
-    margin-left: 10%;
-    margin-top: 10%;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(332deg, rgba(255,255,255,1) 0%, rgb(168, 168, 168) 100%);
-
-}
-.boton__shield:hover{
-    cursor: pointer;
-    background: linear-gradient(332deg, rgba(255,255,255, 0.7) 0%, rgba(168, 168, 168, 0.7) 100%); 
-}
-.boton__shield i{
-    font-size: 150px;
-    color: #141414;
-}
-/*/
 form {
   display: flex;
   flex-direction: column;
