@@ -131,9 +131,10 @@
     button{
         width: 100%;
         height: 25%;
-    border: none;
-    background-color: #141414;
-    color: #ececec;
+        border: none;
+        background-color: #141414;
+        color: #ececec;
+        line-height: 18px;
     &:hover{
         background-color: #242424;
         color: #ececec;

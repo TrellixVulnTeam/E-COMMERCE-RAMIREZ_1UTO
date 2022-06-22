@@ -3,10 +3,10 @@
 @import "bases/extend";
 @font-face {
     font-family: 'NATS';
-    src:url('/sources/font/NATS.ttf.woff') format('woff'),
-        url('/sources/font/NATS.ttf.svg') format('svg'),
-        url('/sources/font/NATS.ttf.eot'),
-        url('/sources/font/NATS.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('../sources/font/NATS.ttf.woff') format('woff'),
+        url('../sources/font/NATS.ttf.svg') format('svg'),
+        url('../sources/font/NATS.ttf.eot'),
+        url('../sources/font/NATS.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
