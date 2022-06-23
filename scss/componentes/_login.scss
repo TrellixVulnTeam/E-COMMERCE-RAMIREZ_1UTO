@@ -1,0 +1,75 @@
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px solid #cccccc00;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 23%;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 3%;
+    
+    label{
+        margin-left: 10%;
+        margin-top: 10%;
+        font-family: 'NATS';
+        font-size: 25px;
+        color: #3d3d3d;
+    }
+
+    input{
+        margin-left: 10%;
+        height: 5%;
+        width: 80%;
+        border: 1px solid rgb(180, 180, 180);
+        background-color: rgb(144 155 193 / 24%);
+        border-radius: 3px;
+    }
+
+    a{
+        text-align: center;
+        margin-top: 25px;
+    }
+    div{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        width: 85%;
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 5%;
+
+        p{
+            cursor: pointer;
+        }
+
+        button{
+            width: 35%;
+            height: 40%;
+            background-color: rgb(87, 90, 102);
+            border: none;
+            color: rgb(233, 233, 233);
+            
+            &:hover{
+                background-color: rgb(60, 62, 70);
+                color: rgb(233, 233, 233);
+                cursor: pointer;
+            }
+        }
+    }
+}
+.main__Login{
+    background: linear-gradient(332deg, rgba(255,255,255,1) 0%, rgba(92,98,124,1) 100%);
+    height: 1000px;
+    h1{
+        margin-top: 5%;
+        margin-left: 5%;
+        color: #ffffff;
+    }
+}
+

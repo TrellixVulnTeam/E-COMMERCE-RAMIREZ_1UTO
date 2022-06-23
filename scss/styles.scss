@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /*/////////////////ANIMACIONES/////////////////*/
 @keyframes animacion_iconos {
-    0.0%{
+    0%{
         left: 0;
         transform: translate(-50px, 0px);
     }
@@ -119,7 +119,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 ///////////////////////LOG-IN////////////////*/
-form{
+@import "componentes/login";
+/*form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -187,7 +188,7 @@ form div{
     margin-top: 15%;
     margin-left: 10%;
     margin-right: 5%;
-}
+}*/
 /*///////////////////////CONFIGURATION-BOOTSTRAP///////////////////*/
 .bg-gradient-grey{
     background: linear-gradient(0deg, #b1b1b1 0%, rgb(255, 255, 255) 65%);
