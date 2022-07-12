@@ -15,20 +15,19 @@
    <nav class="lateralBar">
     <div>
         <a href="../index.html"><i class="uil uil-adjust-circle iconCenter"></i></a>
-        <a href="#"><i class="uil uil-toggle-off iconCenter"></i></a>
+        <i class="uil uil-toggle-off iconCenter"></i></a>
     </div>
-    <nav>
-        <a href="../pages/Account.html"><i class="uil uil-user-circle"></i></a>
+    <div class="div_nav">
+        <a href="../pages/account.html"><i class="uil uil-user-circle"></i></a>
         <a href="../pages/fav.html"><i class="uil uil-heart"></i></a>
         <a href="../pages/settings.html"><i class="uil uil-setting"></i></a>
-        <a href="../pages/LogIn.html"><i class="uil uil-signin"></i></a>
-    </nav>
+        <a href="../pages/login.html"><i class="uil uil-signin"></i></a>
+    </div>
 </nav>
-<header class="header_desktop container-fluid">
-    <div class="row h-25 d-flex flex-row align-items-center align-self-center justify-content-around">
+<header class="header_desktop container-fluid row">
+    <div class="h-25 mt-3 mb-3 d-flex flex-row align-items-center align-self-center justify-content-around justify-content-sm-evenly">
         <audio class="col-3 animacion_opacidad me-auto h-100" src="../sources/audio/song1.mp3" controls></audio>
-        <button class="col-1 animacion_opacidad" type="menu"><i class="uil uil-bars"></i></button>
-        <input class="col-2 animacion_opacidad col-md-8 col-sm-8 form-control w-25" type="search" placeholder="Search">
+        <input class="col-2 animacion_opacidad col-md-8 col-sm-8 form-control w-25 " type="search" placeholder="Search">
         <i class="col-1 animacion_opacidad uil uil-shopping-bag"></i>
     </div>
 </header>
@@ -40,14 +39,14 @@
             <input type="email" name="Email">
             <label for="Password">Password</label>
             <input type="password" name="Password">
-            <a href="#"><p>Forgot Password?</p></a>
+            <p>Forgot Password?</p>
         <div> 
             <button type="submit">Sign Up</button>
             <p>Need Help</p>
         </div>
         </form>
-    </main>
-    <footer>
+        <!--ACA VA EL FOOTER (DIV) PARA EL MOBILE RESPONSIVE-->
+    <div class="mobile_footer">
         <ul>
             <li>Intellectual Property Protection</li>
             <li>Privacy Policy</li>
@@ -57,9 +56,34 @@
             <li>Help</li>
         </ul>
         <p class="footer_p">By JIAO</p>
-        <p class="footer_p">© Copyright (brand name) - 2022</p>
+        <p class="footer_p">© Copyright Ruby - 2022</p>
         <p class="footer_p">All rights reserved</p>
-    </footer>
+    </div>
+</main>
+<footer>
+        <ul>
+            <li>Intellectual Property Protection</li>
+            <li>Privacy Policy</li>
+            <li>Site Map</li>
+            <li>Term of Use and Legal Information</li>
+            <li>User Information Legal Inquiry Guide</li>
+            <li>Help</li>
+        </ul>
+        <p class="footer_p">By JIAO</p>
+        <p class="footer_p">© Copyright Ruby - 2022</p>
+        <p class="footer_p">All rights reserved</p>
+</footer>
+<nav class="nav_space">
+    <div class="lateralBar_mobile">  
+        <div class="div_nav_mobile">
+            <a href="../index.html"><i class="uil uil-estate iconCenter"></i></a>
+            <a href="../pages/account.html"><i class="uil uil-user-circle"></i></a>
+            <a href="../pages/fav.html"><i class="uil uil-heart"></i></a>
+            <a href="../pages/settings.html"><i class="uil uil-setting"></i></a>
+            <a href="../pages/login.html"><i class="uil uil-signin"></i></a>
+        </div>
+    </div>
+</nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

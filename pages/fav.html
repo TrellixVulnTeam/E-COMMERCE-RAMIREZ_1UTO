@@ -15,20 +15,20 @@
     <nav class="lateralBar">
         <div>
             <a href="../index.html"><i class="uil uil-adjust-circle iconCenter"></i></a>
-            <a href="#"><i class="uil uil-toggle-off iconCenter"></i></a>
+            <i class="uil uil-toggle-off iconCenter"></i></a>
         </div>
-        <nav>
-            <a href="../pages/Account.html"><i class="uil uil-user-circle"></i></a>
+        <div class="div_nav">
+            <a href="../pages/account.html"><i class="uil uil-user-circle"></i></a>
             <a href="../pages/fav.html"><i class="uil uil-heart"></i></a>
             <a href="../pages/settings.html"><i class="uil uil-setting"></i></a>
-            <a href="../pages/LogIn.html"><i class="uil uil-signin"></i></a>
-        </nav>
+            <a href="../pages/login.html"><i class="uil uil-signin"></i></a>
+        </div>
     </nav>
     <!------------FIN DE NAV LATERAL----------->
     <header class="header__Account">
         <h1 class="m-4">FAVORITES</h1>
     </header>
-    <main class="main__account container-fluid">
+    <main class="main__account container-fluid p-0">
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
             <div class="col-xxl-2 card g-5 m-xxl-4 border-0 bg-gradient-grey ">
                 <img class="card-img-top" src="../sources/img/joystick.png">
@@ -108,6 +108,20 @@
                 </div> 
             </div>
         </div>
+        <!--ACA VA EL FOOTER (DIV) PARA EL MOBILE RESPONSIVE-->
+    <div class="mobile_footer">
+        <ul>
+            <li>Intellectual Property Protection</li>
+            <li>Privacy Policy</li>
+            <li>Site Map</li>
+            <li>Term of Use and Legal Information</li>
+            <li>User Information Legal Inquiry Guide</li>
+            <li>Help</li>
+        </ul>
+        <p class="footer_p">By JIAO</p>
+        <p class="footer_p">© Copyright Ruby - 2022</p>
+        <p class="footer_p">All rights reserved</p>
+    </div>
     </main>
     <footer>
         <ul>
@@ -119,9 +133,20 @@
             <li>Help</li>
         </ul>
         <p class="footer_p">By JIAO</p>
-        <p class="footer_p">© Copyright (brand name) - 2022</p>
+        <p class="footer_p">© Copyright Ruby - 2022</p>
         <p class="footer_p">All rights reserved</p>
     </footer>
+    <nav class="nav_space">
+        <div class="lateralBar_mobile">  
+            <div class="div_nav_mobile">
+                <a href="../index.html"><i class="uil uil-estate iconCenter"></i></a>
+                <a href="../pages/account.html"><i class="uil uil-user-circle"></i></a>
+                <a href="../pages/fav.html"><i class="uil uil-heart"></i></a>
+                <a href="../pages/settings.html"><i class="uil uil-setting"></i></a>
+                <a href="../pages/login.html"><i class="uil uil-signin"></i></a>
+            </div>
+        </div>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

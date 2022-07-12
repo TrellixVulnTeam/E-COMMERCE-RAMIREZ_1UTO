@@ -13,7 +13,7 @@
 *{
     margin: 0;
 }
-h1, h2{
+.subtitulos, h1, h2{
     font-family: 'NATS';
 }
 h1{
@@ -93,31 +93,11 @@ body::-webkit-scrollbar-thumb:hover {
 	background-color: rgb(63, 63, 63);
 }
 /*/////////////////ANIMACIONES/////////////////*/
-@keyframes animacion_iconos {
-    0%{
-        left: 0;
-        transform: translate(-50px, 0px);
-    }
-    100%{
-        right: 50px;
-        transform: translate(0px, 0px);
-    }
-}
-@keyframes animacion_opacidad {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
+@import "componentes/animaciones";
 /*/////////////////BODY START//////////////////*/
-
 @import "componentes/inicio";
 /*/////////////////////ACOUNT HTML////////////////////////*/
 @import "componentes/account";
-
-
 ///////////////////////LOG-IN////////////////*/
 @import "componentes/login";
 /*///////////////////////CONFIGURATION-BOOTSTRAP///////////////////*/
@@ -142,168 +122,4 @@ body::-webkit-scrollbar-thumb:hover {
 .adjust-heart{
     width: 20%;
     height: 25%;
-}
-/*-/-/-/-/-/-/-/-/-/-/-///-----MOBILE FIRST-----///-/-/-/-/-/-/-/-/-/-/-/-*/
-@media screen and (max-width: 768px) {
-    
-    h1{
-        font-size: 2.3rem;
-    }
-    body{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-                            "header"
-                            "main"
-                            "footer";
-    }
-    .lateralBar{
-        display: none;
-    }
-    .header_desktop{
-        grid-area: header;
-    }
-    header button{
-        display:block;
-        cursor: pointer;
-        background-color: #14141400;
-        border: none;
-    }
-    header audio{
-        display: none;
-    }
-    /*header input{
-        height: 25px;
-        width: 50%;
-        border: 1px solid rgb(112, 112, 112);
-        border-radius: 30px;
-        margin-left:0 ;
-    }
-    header i{
-        margin: 0px 0px;
-    }*/
-    main section{
-        margin-top: 10px;
-    }
-    section a p{
-        font-size: 0.7rem;
-    }
-    .imageClock{
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        height: 150px;
-    }
-    /*------------------------ACCOUNT------------------------*/
-    .body__Account{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:"search_header"
-                            "header"
-                            "main"
-                            "footer";
-    }
-    .header_desktop1{
-        display: block;
-        grid-area: search_header;
-    }
-    .body__Account header{
-        justify-content: space-around;
-    }
-    .body__Account .header_desktop1{
-        justify-content: space-around;
-    }
-    .body__Account .header__Account{
-        justify-content: center;
-    }
-    .header__Account article{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        background: #14141400;
-    }
-    .header__Account div{
-        align-items: center;
-    }
-    .body__Account header h1, h2{
-        padding-left: 0 ;
-    }
-    .uil-angle-double-right{
-        display: none;
-    }
-    .main__account{
-        margin-left: 0;
-        width: 100%;
-        flex-direction: column;
-    }
-    .account__img{
-        margin-left: 40px;
-        margin-right: 20px;
-    }
-    .account__img1{
-        margin-left: 15px;
-        margin-right: 20px;
-    }
-    .body__Account main section article div {
-        width: 75%;
-    }
-    .body__Account main section article h4 {
-        font-size: 20px;
-        width: 160px
-    }
-    .div__for__title{
-        width: 98%;
-    }
-    .span__button{
-        margin-left: 0;
-    }
-    .carrousell__Account{
-        margin-left: 1%;
-        max-height: 100%;
-        overflow-x: auto;
-        margin-top: 0px;
-    }
-    .div__for__title_Pay{
-        margin-left: 0;
-    }
-    .section_Pay{
-        margin-left: 0;
-        width: 100%;
-    }
-    .boton__shield{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    /*--------------LOGIN--------------*/
-    .login_grid{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:"search_header"
-                            "header"
-                            "main"
-                            "footer";
-    }
-    .loginbag{
-        display: none;
-    }
-    form{
-        width: 70%;
-        margin: 0;
-    }
-    .main__Login{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main__Login h1{
-        margin-left: 0;
-        text-align: center;
-        margin-top: 50px;
-    }
 }

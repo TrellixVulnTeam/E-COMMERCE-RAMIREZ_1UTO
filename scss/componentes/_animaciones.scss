@@ -1,0 +1,18 @@
+@keyframes animacion_iconos {
+    0%{
+       
+        transform: translate(-50px, 0px);
+    }
+    100%{
+        
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes animacion_opacidad {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

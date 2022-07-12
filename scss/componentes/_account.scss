@@ -29,7 +29,7 @@
         border-radius: 25px;
         font-family: 'NATS';
         h4{
-            font-size: 25px;
+            font-size: calc(0.6rem + 0.7vw);
             height: 50px 
         }
         span{
@@ -121,6 +121,7 @@
     overflow-x: auto;
     margin-top: 20px;
     gap: 20px;
+
     
 }
 .span__button{
@@ -171,5 +172,91 @@
     i{
         font-size: 150px;
         color: #141414;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body__Account{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:"search_header"
+                            "header"
+                            "main"
+                            "mobile_footer"
+                            "lateralbar";
+    }
+    .header_desktop1{
+        display: block;
+        grid-area: search_header;
+    }
+    .body__Account header{
+        justify-content: space-around;
+    }
+    .body__Account .header_desktop1{
+        justify-content: space-around;
+    }
+    .body__Account .header__Account{
+        justify-content: center;
+    }
+    .header__Account article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background: #14141400;
+    }
+    .header__Account div{
+        align-items: center;
+    }
+    .body__Account header h1, h2{
+        padding-left: 0 ;
+    }
+    .uil-angle-double-right{
+        display: none;
+    }
+    .main__account{
+        margin-left: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .account__img{
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    .account__img1{
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .body__Account main section article div {
+        width: 75%;
+    }
+    .body__Account main section article h4 {
+        font-size: 20px;
+        width: 160px
+    }
+    .div__for__title{
+        width: 98%;
+    }
+    .span__button{
+        margin-left: 0;
+    }
+    .carrousell__Account{
+        margin-left: 1%;
+        max-height: 100%;
+        overflow-x: auto;
+        margin-top: 0px;
+    }
+    .div__for__title_Pay{
+        margin-left: 0;
+    }
+    .section_Pay{
+        margin-left: 0;
+        width: 100%;
+    }
+    .boton__shield{
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 }
